@@ -1,9 +1,6 @@
 ﻿using IntelliCAD.ApplicationServices;
 using Teigha.DatabaseServices;
 
-using IntelliCAD.ApplicationServices;
-using Teigha.DatabaseServices;
-
 
 
 
@@ -613,21 +610,21 @@ namespace Linq2Acad
       get { return new TableStyleContainer(Database, transaction, Database.TableStyleDictionaryId); }
     }
 
-    /// <summary>
-    /// Provides access to the elements of the SectionViewStyle dictionary.
-    /// </summary>
-    public SectionViewStyleContainer SectionViewStyles
-    {
-      get { return new SectionViewStyleContainer(Database, transaction, Database.SectionViewStyleDictionaryId); }
-    }
+    ///// <summary>
+    ///// Provides access to the elements of the SectionViewStyle dictionary.
+    ///// </summary>
+    ////public SectionViewStyleContainer SectionViewStyles
+    ////{
+    ////  get { return new SectionViewStyleContainer(Database, transaction, Database.SectionViewStyleDictionaryId); }
+    ////}
 
-    /// <summary>
-    /// Provides access to the elements of the DetailViewStyle dictionary.
-    /// </summary>
-    public DetailViewStyleContainer DetailViewStyles
-    {
-      get { return new DetailViewStyleContainer(Database, transaction, Database.DetailViewStyleDictionaryId); }
-    }
+    /////// <summary>
+    /////// Provides access to the elements of the DetailViewStyle dictionary.
+    /////// </summary>
+    ////public DetailViewStyleContainer DetailViewStyles
+    ////{
+    ////  get { return new DetailViewStyleContainer(Database, transaction, Database.DetailViewStyleDictionaryId); }
+    ////}
 
     #endregion
 

@@ -73,71 +73,71 @@ namespace Linq2Acad
     }
   }
 
-  public class DetailViewStyleContainer : DBDictionaryEnumerable<DetailViewStyle>
-  {
-    internal DetailViewStyleContainer(Database database, Transaction transaction, ObjectId containerID)
-      : base(database, transaction, containerID)
-    {
-    }
+  //public class DetailViewStyleContainer : DBDictionaryEnumerable<DetailViewStyle>
+  //{
+  //  internal DetailViewStyleContainer(Database database, Transaction transaction, ObjectId containerID)
+  //    : base(database, transaction, containerID)
+  //  {
+  //  }
 
-    protected override DetailViewStyle CreateNew()
-    {
-      return new DetailViewStyle();
-    }
+  //  protected override DetailViewStyle CreateNew()
+  //  {
+  //    return new DetailViewStyle();
+  //  }
 
-    public DetailViewStyle Create(string name)
-    {
-      if (name == null) throw Error.ArgumentNull("name");
-      if (!Helpers.IsNameValid(name)) throw Error.InvalidName(name);
-      if (Contains(name)) throw Error.ObjectExists<DetailViewStyle>(name);
+  //  public DetailViewStyle Create(string name)
+  //  {
+  //    if (name == null) throw Error.ArgumentNull("name");
+  //    if (!Helpers.IsNameValid(name)) throw Error.InvalidName(name);
+  //    if (Contains(name)) throw Error.ObjectExists<DetailViewStyle>(name);
 
-      try
-      {
-        return CreateInternal(name);
-      }
-      catch (Exception e)
-      {
-        throw Error.AutoCadException(e);
-      }
-    }
+  //    try
+  //    {
+  //      return CreateInternal(name);
+  //    }
+  //    catch (Exception e)
+  //    {
+  //      throw Error.AutoCadException(e);
+  //    }
+  //  }
 
-    public void Add(DetailViewStyle item)
-    {
-      if (item == null) throw Error.ArgumentNull("item");
-      if (!Helpers.IsNameValid(item.Name)) throw Error.InvalidName(item.Name);
-      if (Contains(item.Name)) throw Error.ObjectExists<DetailViewStyle>(item.Name);
+  //  public void Add(DetailViewStyle item)
+  //  {
+  //    if (item == null) throw Error.ArgumentNull("item");
+  //    if (!Helpers.IsNameValid(item.Name)) throw Error.InvalidName(item.Name);
+  //    if (Contains(item.Name)) throw Error.ObjectExists<DetailViewStyle>(item.Name);
 
-      try
-      {
-        AddRangeInternal(new[] { item }, new[] { item.Name });
-      }
-      catch (Exception e)
-      {
-        throw Error.AutoCadException(e);
-      }
-    }
+  //    try
+  //    {
+  //      AddRangeInternal(new[] { item }, new[] { item.Name });
+  //    }
+  //    catch (Exception e)
+  //    {
+  //      throw Error.AutoCadException(e);
+  //    }
+  //  }
 
-    public void AddRange(IEnumerable<DetailViewStyle> items)
-    {
-      if (items == null) throw Error.ArgumentNull("items");
+  //  public void AddRange(IEnumerable<DetailViewStyle> items)
+  //  {
+  //    if (items == null) throw Error.ArgumentNull("items");
 
-      foreach (var item in items)
-      {
-        if (item == null) throw Error.ArgumentNull("item");
-        if (!Helpers.IsNameValid(item.Name)) throw Error.InvalidName(item.Name);
-        if (Contains(item.Name)) throw Error.ObjectExists<DetailViewStyle>(item.Name);
-      }
+  //    foreach (var item in items)
+  //    {
+  //      if (item == null) throw Error.ArgumentNull("item");
+  //      if (!Helpers.IsNameValid(item.Name)) throw Error.InvalidName(item.Name);
+  //      if (Contains(item.Name)) throw Error.ObjectExists<DetailViewStyle>(item.Name);
+  //    }
 
-      try
-      {
-        AddRangeInternal(items, items.Select(i => i.Name));
-      }
-      catch (Exception e)
-      {
-        throw Error.AutoCadException(e);
-      }
-    }
-  }
+  //    try
+  //    {
+  //      AddRangeInternal(items, items.Select(i => i.Name));
+  //    }
+  //    catch (Exception e)
+  //    {
+  //      throw Error.AutoCadException(e);
+  //    }
+  //  }
+  //}
 
   public class GroupContainer : DBDictionaryEnumerable<Group>
   {
@@ -568,71 +568,71 @@ namespace Linq2Acad
     }
   }
 
-  public class SectionViewStyleContainer : DBDictionaryEnumerable<SectionViewStyle>
-  {
-    internal SectionViewStyleContainer(Database database, Transaction transaction, ObjectId containerID)
-      : base(database, transaction, containerID)
-    {
-    }
+  //public class SectionViewStyleContainer : DBDictionaryEnumerable<SectionViewStyle>
+  //{
+  //  internal SectionViewStyleContainer(Database database, Transaction transaction, ObjectId containerID)
+  //    : base(database, transaction, containerID)
+  //  {
+  //  }
 
-    protected override SectionViewStyle CreateNew()
-    {
-      return new SectionViewStyle();
-    }
+  //  protected override SectionViewStyle CreateNew()
+  //  {
+  //    return new SectionViewStyle();
+  //  }
 
-    public SectionViewStyle Create(string name)
-    {
-      if (name == null) throw Error.ArgumentNull("name");
-      if (!Helpers.IsNameValid(name)) throw Error.InvalidName(name);
-      if (Contains(name)) throw Error.ObjectExists<SectionViewStyle>(name);
+  //  public SectionViewStyle Create(string name)
+  //  {
+  //    if (name == null) throw Error.ArgumentNull("name");
+  //    if (!Helpers.IsNameValid(name)) throw Error.InvalidName(name);
+  //    if (Contains(name)) throw Error.ObjectExists<SectionViewStyle>(name);
 
-      try
-      {
-        return CreateInternal(name);
-      }
-      catch (Exception e)
-      {
-        throw Error.AutoCadException(e);
-      }
-    }
+  //    try
+  //    {
+  //      return CreateInternal(name);
+  //    }
+  //    catch (Exception e)
+  //    {
+  //      throw Error.AutoCadException(e);
+  //    }
+  //  }
 
-    public void Add(SectionViewStyle item)
-    {
-      if (item == null) throw Error.ArgumentNull("item");
-      if (!Helpers.IsNameValid(item.Name)) throw Error.InvalidName(item.Name);
-      if (Contains(item.Name)) throw Error.ObjectExists<SectionViewStyle>(item.Name);
+  //  public void Add(SectionViewStyle item)
+  //  {
+  //    if (item == null) throw Error.ArgumentNull("item");
+  //    if (!Helpers.IsNameValid(item.Name)) throw Error.InvalidName(item.Name);
+  //    if (Contains(item.Name)) throw Error.ObjectExists<SectionViewStyle>(item.Name);
 
-      try
-      {
-        AddRangeInternal(new[] { item }, new[] { item.Name });
-      }
-      catch (Exception e)
-      {
-        throw Error.AutoCadException(e);
-      }
-    }
+  //    try
+  //    {
+  //      AddRangeInternal(new[] { item }, new[] { item.Name });
+  //    }
+  //    catch (Exception e)
+  //    {
+  //      throw Error.AutoCadException(e);
+  //    }
+  //  }
 
-    public void AddRange(IEnumerable<SectionViewStyle> items)
-    {
-      if (items == null) throw Error.ArgumentNull("items");
+  //  public void AddRange(IEnumerable<SectionViewStyle> items)
+  //  {
+  //    if (items == null) throw Error.ArgumentNull("items");
 
-      foreach (var item in items)
-      {
-        if (item == null) throw Error.ArgumentNull("item");
-        if (!Helpers.IsNameValid(item.Name)) throw Error.InvalidName(item.Name);
-        if (Contains(item.Name)) throw Error.ObjectExists<SectionViewStyle>(item.Name);
-      }
+  //    foreach (var item in items)
+  //    {
+  //      if (item == null) throw Error.ArgumentNull("item");
+  //      if (!Helpers.IsNameValid(item.Name)) throw Error.InvalidName(item.Name);
+  //      if (Contains(item.Name)) throw Error.ObjectExists<SectionViewStyle>(item.Name);
+  //    }
 
-      try
-      {
-        AddRangeInternal(items, items.Select(i => i.Name));
-      }
-      catch (Exception e)
-      {
-        throw Error.AutoCadException(e);
-      }
-    }
-  }
+  //    try
+  //    {
+  //      AddRangeInternal(items, items.Select(i => i.Name));
+  //    }
+  //    catch (Exception e)
+  //    {
+  //      throw Error.AutoCadException(e);
+  //    }
+  //  }
+  //}
 
   public class TableStyleContainer : DBDictionaryEnumerable<TableStyle>
   {

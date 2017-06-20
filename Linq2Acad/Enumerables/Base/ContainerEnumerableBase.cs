@@ -241,7 +241,7 @@ namespace Linq2Acad
       public IEnumerable<ObjectId> Filter<TElement>(IEnumerable<ObjectId> ids) where TElement : DBObject
       {
         // TODO: What is TElement's RXClass if it is a derived type?
-        var rxType = Autodesk.AutoCAD.Runtime.RXClass.GetClass(typeof(TElement));
+        var rxType = Teigha.Runtime.RXClass.GetClass(typeof(TElement));
         return ids.Where(id => id.ObjectClass.IsDerivedFrom(rxType));
       }
     }

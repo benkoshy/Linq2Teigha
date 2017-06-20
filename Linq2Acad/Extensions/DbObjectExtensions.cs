@@ -82,7 +82,7 @@ namespace Linq2Acad
         }
         else if (typeof(T) == typeof(long))
         {
-          saveData(getResultBuffer(DxfCode.Int64));
+          saveData(getResultBuffer(DxfCode.Int32));
         }
         else if (typeof(T) == typeof(string))
         {
