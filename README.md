@@ -1,4 +1,15 @@
-###Linq2Acad
+###Linq2Teigha
+
+## Library With References Changed
+
+This library makes superficial reference changes to Enable Wolfgang Tertinkek's library available to Teigha users - specifically ActCAD. There were two minor classes which exists in AutoCAD which does not exist in the Teigha library so they were removed. Another such example - Teigha only maintains DXF codes to int 32 I believe not 64 as is the case with AutoDesk.
+
+All credit to Wolfgang.
+
+The references have changed but mostly everything else is still the same. That's why you will still see the name "Acad" around a lot.
+
+
+
 **Linq2Acad** is a library that aims to simplify AutoCAD .NET addin code. The use of transactions is abstracted away through extension methods and ```IEnumerable<T>``` implementations which enumerate the datatabase objects. This provides the possibility to execute LINQ queries on database-resident objects. The AutoCAD .NET API already offers a way to use LINQ queries through the ```dynamic``` keyword, which has the drawback of losing all type information (no IntelliSense) and having some performance implications. Using Linq2Acad the type information is preserved and there are no performance implications.
 
 In general, the library should be a more intuitive API for working with the drawing database, making the learning curve for beginners less steep.
