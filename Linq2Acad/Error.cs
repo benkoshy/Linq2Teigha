@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using Autodesk.AutoCAD.DatabaseServices;
+using Teigha.DatabaseServices;
 
 namespace Linq2Acad
 {

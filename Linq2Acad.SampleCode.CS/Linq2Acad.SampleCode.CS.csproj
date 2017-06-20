@@ -30,14 +30,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="AcCoreMgd">
-      <HintPath>..\..\..\..\..\..\..\..\ObjectARX 2015\inc\AcCoreMgd.dll</HintPath>
+    <Reference Include="IcCoreMgd_4.02_11">
+      <HintPath>D:\Program Files\ActCAD\ActCAD 8.3 Professional\IcCoreMgd_4.02_11.dll</HintPath>
     </Reference>
-    <Reference Include="AcDbMgd">
-      <HintPath>..\..\..\..\..\..\..\..\ObjectARX 2015\inc\AcDbMgd.dll</HintPath>
-    </Reference>
-    <Reference Include="AcMgd">
-      <HintPath>..\..\..\..\..\..\..\..\ObjectARX 2015\inc\AcMgd.dll</HintPath>
+    <Reference Include="IcMgd_4.02_11">
+      <HintPath>D:\Program Files\ActCAD\ActCAD 8.3 Professional\IcMgd_4.02_11.dll</HintPath>
     </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="System" />
@@ -48,6 +45,9 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
+    <Reference Include="TD_Mgd_4.02_11">
+      <HintPath>D:\Program Files\ActCAD\ActCAD 8.3 Professional\TD_Mgd_4.02_11.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="SampleCode.Addin.cs">
@@ -57,9 +57,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Linq2Acad\Linq2Acad.csproj">
+    <ProjectReference Include="..\Linq2Acad\Linq2Teigha.csproj">
       <Project>{7702e342-fabc-49a4-9337-bfc9b5b3b99e}</Project>
-      <Name>Linq2Acad</Name>
+      <Name>Linq2Teigha</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

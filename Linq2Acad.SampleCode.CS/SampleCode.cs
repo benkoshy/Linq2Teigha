@@ -4,10 +4,11 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Autodesk.AutoCAD.Colors;
-using Autodesk.AutoCAD.DatabaseServices;
-using Autodesk.AutoCAD.Geometry;
-using Autodesk.AutoCAD.Runtime;
+using Teigha.Colors;
+using Teigha.DatabaseServices;
+using Teigha.Geometry;
+using Teigha.Runtime;
+
 
 namespace Linq2Acad
 {
