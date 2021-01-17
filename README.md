@@ -1,5 +1,9 @@
 ### Linq2Teigha
 
+## Library not actively maintained
+
+- Use at your own risk: this library is not being actively maintained. It has been some years since I have used the Teigha APIs.
+
 ## Library With References Changed
 
 This library makes superficial reference changes to Enable Wolfgang Tertinkek's library available to Teigha users - specifically ActCAD. There were two minor classes which exists in AutoCAD which does not exist in the Teigha library so they were removed. Another such example - Teigha only maintains DXF codes to int 32 I believe not 64 as is the case with AutoDesk.
