@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Linq2Acad</RootNamespace>
     <AssemblyName>Linq2Acad</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
   </PropertyGroup>
@@ -37,11 +37,13 @@
     <DocumentationFile>bin\Release\Linq2Acad.XML</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="IcCoreMgd_4.02_11">
-      <HintPath>D:\Program Files\ActCAD\ActCAD 8.3 Professional\IcCoreMgd_4.02_11.dll</HintPath>
+    <Reference Include="IcCoreMgd_4.3_15">
+      <HintPath>..\ActCadDLLs\IcCoreMgd_4.3_15.dll</HintPath>
+      <Private>False</Private>
     </Reference>
-    <Reference Include="IcMgd_4.02_11">
-      <HintPath>D:\Program Files\ActCAD\ActCAD 8.3 Professional\IcMgd_4.02_11.dll</HintPath>
+    <Reference Include="IcMgd_4.3_15">
+      <HintPath>..\ActCadDLLs\IcMgd_4.3_15.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -50,8 +52,9 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
-    <Reference Include="TD_Mgd_4.02_11">
-      <HintPath>D:\Program Files\ActCAD\ActCAD 8.3 Professional\TD_Mgd_4.02_11.dll</HintPath>
+    <Reference Include="TD_Mgd_4.3_15">
+      <HintPath>..\ActCadDLLs\TD_Mgd_4.3_15.dll</HintPath>
+      <Private>False</Private>
     </Reference>
   </ItemGroup>
   <ItemGroup>
